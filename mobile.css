@@ -1,0 +1,542 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Fira Sans', sans-serif;   
+}
+p{
+    margin:0;
+    padding:0;
+    font-size:1.2rem;
+    text-align:justify;
+}
+
+.dotted-hr{
+    border:dotted 6px white;
+    border-bottom:none;
+    margin:20px auto;
+    width:75px;
+}
+/*navabar design starts here*/
+.navbar{
+    width:100%;
+    background-color:#41868D;
+    padding:1% 5%;
+    text-align:center;
+    
+}
+
+.navbar h1{
+    font-size:2.5rem;
+    color:white;
+    margin:0;
+    padding-top:10px;
+}
+.navbar .menu{
+    display:flex;
+    flex-direction:column;
+    
+}  
+.navbar .menu > a{
+    text-decoration:none;
+    padding:10px;
+   background-color: rgb(29, 100, 100);
+    color:white;
+    margin:7px 0;
+    border-radius:10px;
+    font-size:1.2rem;
+}
+.navbar .menu > a:hover{
+    background-color:gray;
+}
+
+
+
+[class*="col-"]{
+    float:left;
+    padding:10px;
+}
+/*for mobile*/
+[class*="col-"]{
+    width:100%;
+}
+
+.navbar::after{
+    content:'';
+    clear:both;
+    display:table;
+}
+/*navabar design ends here*/
+
+/*profile design starts here*/
+    .profile{
+      padding:130px 10px;
+      position:relative;
+      text-align:center;
+    }
+    .top-weather-icon{
+        position:absolute;
+        height:100px;
+        width:100px;
+        top:20px;
+        right:60px;
+        transition: transform 1.5s;
+    }
+    .top-weather-icon:hover{
+        
+        transform:rotate(360deg);
+    }
+    .profile-disc{
+        text-align:center;
+        
+    }
+    .profile-disc h1{
+        font-family: 'Satisfy', cursive;
+        font-size: 2.5rem;
+    }
+    .profile-disc p{
+        font-size:1rem;
+        color:gray;
+        text-align:center;
+        width:90%;
+        margin:0 auto 20px auto;
+    }
+
+    .bottom-weather-icon{
+        position:absolute;
+        bottom:20px;
+        left:60px;
+        height:100px;
+        width:100px;
+        transition: transform 1.5s;
+    }
+    .bottom-weather-icon:hover{
+       
+        transform:rotate(360deg);
+    }
+
+    .profile::after{
+        content:'';
+        clear:both;
+        display:table;
+    }
+
+/*profile design ends here*/
+
+/*tutorial design starts here*/
+    .tutorial{
+        background-color:gray;
+        padding:2% 4%;
+        width:100%;
+        text-align:center;
+    }
+    [class*="col-"]{
+        width:100%;
+    }
+    .tutorial-header{
+        color:white;
+    }
+    .tutorial-header span{
+        letter-spacing:5px;
+    }
+   
+    .card-container{
+        display:flex;
+        flex-wrap:wrap;
+    }
+    .card{
+        display:inline-block;
+        text-decoration:none;
+        color:white;
+        width:100%;
+        
+    }
+    .card:hover{
+        opacity:.9;  
+    }
+    .card h3{
+        font-weight:lighter;
+    }
+    .card .image{
+        position:relative;
+        width:100%;
+        height:350px;
+    }
+    .card .image img{
+        height:350px;
+        width:100%;
+    }
+    .card .image .desc{
+        position:absolute;
+        background-color:black;
+        opacity:.8;
+        width:100%;
+        height:40%;
+        bottom:0px;
+        font-size:20px;
+       
+    }
+    .tutorial::after{
+        content:'';
+        clear:both;
+        display:table;
+    }
+/*tutorial design ends here*/
+/*about me section starts here*/
+.about-me{
+    background-color:rgb(79, 170, 173);
+    color:white;
+    padding:1% 7%;
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+}
+
+
+.about-me .about-header{
+    text-align:center;
+}
+.about-me .dotted-hr{
+    letter-spacing:2px;
+}
+.about-me .my-image img{
+    border:5px solid white;
+    border-radius:50%;
+    height:220px;
+    width:230px;
+}
+.about-me p{
+    text-align:center;
+}
+.about-me .about-desc .my-desc{
+    text-align:center;
+}
+.about-me a{
+    color:white;
+    text-decoration:none;
+}
+ .about-hr{
+   background-color:rgb(219, 207, 207);
+   height:2px;
+   border:none;
+}
+.btn{
+    background-color:black;
+    opacity:.7;
+    color:white;
+    border:none;
+    padding:15px;
+    margin:10px;
+    font-size:1rem;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.about-me::after{
+    content:'';
+    clear:both;
+    display:table;
+}
+/*about me section starts here*/
+
+/*Card design for education part starts here*/
+.education-cards{
+    padding:1% 0%;
+    background-color:white;
+}
+
+
+.edu-card{
+    background-color:#a39e9e;
+    padding:0px 12px;
+    border-radius:5px;
+    transition:0.3s;
+    height:700px;
+    
+}
+.edu-card:hover{
+    box-shadow: 0px 4px 8px 5px rgb(46, 33, 33);
+}
+.business-card-icon{
+    text-align:center;
+}
+.briefcase-image{
+    margin-top:20px;
+    width:100px;
+    border:5px solid white;
+    border-radius:50%;
+    padding:15px;
+}
+.card-title{
+  
+}
+.card-title h2{
+    background-color: #616161;
+    text-align:center;
+    color:white;
+    padding:10px;
+}
+.card-description{
+    
+    
+}
+.card-description p{
+    margin:0;
+    padding:0;
+    font-size:15px;
+}
+
+.card-description a{
+    text-decoration:none;
+    color:white;
+    font-size:1rem;
+    margin:0;
+}
+.skill-description{
+   
+    padding-right:45px; 
+}
+
+.skills .skill-description ol li{
+    
+    font-size:18px;
+    list-style: none;
+    font-weight: bolder;
+    position:relative;
+    margin:20px 10px;
+    text-transform:uppercase;
+}
+.skills .skill-description ol li::before{
+    content:'';
+    background-color:rgb(86, 86, 153,.5);
+    position:absolute;
+    width:100%;
+    height:10px;
+    top:calc(100% + 2px);
+    left:0px;
+    border-radius: 1000px;
+    
+}
+.skills .skill-description ol li::after{
+    content:'';
+    background-color:rgb(86, 86, 153,1);
+    position:absolute;
+    width:0%;
+    height:10px;
+    top:calc(100% + 2px);
+    left:0px;
+    border-radius: 1000px;
+    
+   animation-duration: 3s;
+   animation-delay: 2s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   animation-direction: forward;
+  /* animation-fill-mode: forwards;*/
+}
+.skills ol .html::after{
+    animation-name:html;
+}
+@keyframes html{
+    to{
+        width:95%;
+    }
+}
+
+.skills ol .css::after{
+    animation-name:css;
+}
+@keyframes css{
+    to{
+        width:90%;
+    }
+}
+.skills ol .boots::after{
+    animation-name:boots;
+}
+@keyframes boots{
+    to{
+        width:70%;
+    }
+}
+.skills ol .java::after{
+    animation-name:java;
+}
+@keyframes java{
+    to{
+        width:85%;
+    }
+}
+.skills ol .jque::after{
+    animation-name:jque;
+}
+@keyframes jque{
+    to{
+        width:90%;
+    }
+}
+.skills ol .node::after{
+    animation-name:node;
+}
+@keyframes node{
+    to{
+        width:60%;
+    }
+}
+.skills ol .exp::after{
+    animation-name:exp;
+}
+@keyframes exp{
+    to{
+        width:50%;
+    }
+}
+.skills ol .git::after{
+    animation-name:git;
+}
+@keyframes git{
+    to{
+        width:100%;
+    }
+}
+.skills ol .react::after{
+    animation-name:react;
+}
+@keyframes react{
+    to{
+        width:65%;
+    }
+}
+
+.education-cards::after{
+    content:'';
+    display:table;
+    clear:both;
+}
+/*Card design for education part ends here*/
+
+
+/*contact me area starts*/
+.contact-area{
+    background-color:#39A1AD;
+    padding:1% 7%;
+    color:white;
+}
+.contact-header{
+    color:white;
+    text-align:center;
+    margin-bottom:28px;
+}
+
+
+.contact-me{
+    text-align:center;
+    color:white;
+   
+}
+
+.contact-me p{
+    text-align:center;
+    margin-bottom:15px;
+    
+}
+.contact-me input,textarea{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:7px;
+    text-align:center;
+    font-size:1rem;
+    letter-spacing: 1px;
+    resize:none;
+}
+
+.contact-me button{
+    border:none;
+    height:50px;
+    width:130px;
+    border-radius: 10px;
+    background-color:black;
+    color:white;
+    opacity:.7;
+    margin:10px;
+    font-size:15px;
+    transition:.2s;
+    cursor:pointer;
+}
+.contact-me button:hover{
+    height:55px;
+    width:135px;
+    font-size:17px;
+    opacity:.9;
+}
+.more-ways{
+    text-align:center;
+}
+.media-buttons .btnm{
+    border:none;
+    border-radius:25px;
+    font-size:28px;
+    padding:5px;
+    margin:8px;
+    width:45px;
+    background-color:white;
+    transition:.2s;
+    cursor:pointer;
+}
+.media-buttons .btnm:hover{
+    background-color:rgb(177, 172, 172);
+    width:52px;
+    font-size:35px;
+}
+.contact-area::after{
+    content:'';
+    display:table;
+    clear:both;
+}
+
+/*contact me area ends*/
+
+/*footer design starts here*/
+    .footer{
+        background-color:black;
+        text-align:center;
+        color:white;
+        padding:20px;
+        font-size:0.8rem;
+    }
+    .footer-menu{
+      
+    }
+    .footer-menu a{
+        color:white;
+        text-decoration:none;
+        display:block;
+        margin:15px 0;
+        font-size:1rem;
+    }
+    .footer-menu a:hover{
+        color:gray;
+    }
+    .footer-about{
+
+    }
+    .footer-about p{
+        margin-top:5px;
+        
+        margin:0;
+        padding:0;
+        text-align:center;
+    }
+    .footer-about p span{
+        font-size:1.5rem;
+        margin:2px;
+        color:rgb(255, 0, 0);
+    }
+    .footer::after{
+        content:'';
+        display:table;
+        clear:both;
+    }
+/*footer design ends here*/
